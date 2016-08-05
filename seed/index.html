@@ -1,0 +1,48 @@
+<html ng-app="myApp">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./public/css/style.css" rel="stylesheet">
+</head>
+
+<body ng-cloak>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom: 1px #eee solid">
+      <div class="container-fluid" style="background-color: #eee">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Alpha Flow COPYCAT</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="glyphicon glyphicon-envelope btn-" href="/"><span class="badge">4</span></a></li>
+            <li><a class="glyphicon glyphicon-flash" href="/"><span class="badge">9</span></a></li>
+            <li><a href="/">Invest</a></li>
+            <li><a href="/">My Portfolio</a></li>
+            <li><a href="/">Kim Gov</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/underscore-min.js"></script>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./main.js"></script>
+    <script src="./view/contact.view.js"></script>
+    <script src="./view/contact.new.js"></script>
+    <script src="./view/contact.edit.js"></script>
+    <script src="./view/contact.dir.js"></script>
+</body>
+</html>

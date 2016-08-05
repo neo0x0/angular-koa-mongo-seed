@@ -1,0 +1,14 @@
+<div>
+    <div class="contactInfo"> 
+        <strong>{{contact.firstname}} {{contact.lastname}}</strong> <br/>
+        {{contact.phonenumber}}
+    </div><br/>
+</div>
+
+<div>
+    <div style="position:relative; bottom: 15px;">
+        <a ng-href="/" ng-click="del()" class="glyphicon glyphicon-trash btn btn-danger btn-s pull-right btn-separation-left"></a>
+
+        <a ng-href="view/edit" ng-click="edit()" class="glyphicon glyphicon-pencil btn btn-primary btn-s pull-right btn-separation-left" style="color: white; font-decoration: none;"></a>
+    </div>
+</div>

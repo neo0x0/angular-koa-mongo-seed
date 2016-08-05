@@ -1,0 +1,23 @@
+<div class="container" ng-controller="ContactCtrl">
+    <div>
+        <!-- CONTACTS HEADER -->
+        <div class="row">
+            <div>
+              <div class="row placeholders">
+                <h1 class="page-header">YOUR CONTACTS ({{contacts.length}})
+                    <a class="btn btn-success" style="color: white; font-decoration: none; float: right; margin-right: 10px" ng-href="view/new" ng-click="openNewContact()">New Contact</a>
+                </h1>
+              </div>
+            </div>
+        </div>
+
+        <!-- CONTACT CONTAINER -->
+        <div class="container col-sm-11 col-sm-offset-1 col-md-10 col-md-offset-1 main">
+          <div class="row">
+            <div class="col-sm-5 well" ng-repeat="contact in contacts track by $index">
+                <contact-card contact="contact" edit="openEditContact(contact, $index)" del="deleteContact()" index="$index"></contact-card>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
